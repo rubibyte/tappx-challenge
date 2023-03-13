@@ -1,0 +1,5 @@
+Comandos para:
+- Mostrar una lista de los paquetes instalados y sus versiones: pip list
+- Mostrar los metadatos del paquete numpy: pip show numpy
+- Elimina el paquete numpy: pip uninstall numpy
+- (Re)instala el paquete numpy: pip install numpy
