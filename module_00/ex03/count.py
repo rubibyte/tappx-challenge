@@ -35,5 +35,7 @@ punctuation and spaces in a given text.'''
 if __name__ == "__main__":
     if len(sys.argv) > 2:
         print("AssertionError: more than one argument are provided")
+    elif len(sys.argv) < 2:
+        text_analyzer()
     else:
         text_analyzer(sys.argv[1])
