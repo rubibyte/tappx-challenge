@@ -2,6 +2,7 @@ import sys
 
 argv = sys.argv[:]
 
+
 def who_is(num):
     if num == 0:
         print("I'm Zero.")
@@ -9,6 +10,7 @@ def who_is(num):
         print("I'm Odd.")
     else:
         print("I'm Even.")
+
 
 if len(argv) > 2:
     print("AssertionError: more than one argument are provided")
