@@ -74,4 +74,4 @@ function set_conda {
 
 set_conda
 
-source ~/.zshrc
+# source ~/.zshrc
