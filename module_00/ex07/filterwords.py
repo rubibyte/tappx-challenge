@@ -19,9 +19,12 @@ elif not argv[2].isdigit():
     print("AssertionError: second argument is not an integer.")
     input_rules()
 else:
-    no_punctuation_str = re.sub(r'[^\w\s]', '', argv[1])
-    result = list()
-    for word in no_punctuation_str.split():
-        if len(word) > int(argv[2]):
-            result.append(word)
-    print(result)
+    no_punct_str = re.sub(r'[^\w\s]', '', argv[1])
+    # result = list()
+    prueba = \
+        list(word for word in no_punct_str.split() if len(word) > int(argv[2]))
+    # for word in no_punct_str.split():
+    #     if len(word) > int(argv[2]):
+    #         result.append(word)
+    # print(result)
+    print(prueba)
