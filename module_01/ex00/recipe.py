@@ -1,35 +1,12 @@
 class Recipe:
     def __init__(self, name, cooking_lvl, cooking_time, recipe_type,
                  ingredients, description=None):
-        if not isinstance(name, str):
-            raise TypeError("recipe name must be a string")
-        if not isinstance(cooking_lvl, int):
-            raise TypeError("cooking level must be an integer")
-        elif not (1 <= cooking_lvl <= 5):
-            raise ValueError("cooking level must be an integer from 1 to 5")
-        if not isinstance(cooking_time, int):
-            raise TypeError("cooking time must be an integer")
-        elif not cooking_time > 0:
-            raise ValueError("cooking time must be a positive integer \
-                             representing minutes")
-        if not isinstance(recipe_type, str):
-            raise TypeError("recipe type must be a string")
-        elif recipe_type not in ["entrante", "comida", "postre"]:
-            raise ValueError("recipe type must be one of those: \
-                             'entrante', 'comida' or 'postre'")
-        if not isinstance(ingredients, list):
-            raise TypeError("ingredients must be a list")
-        elif len(ingredients) < 1 or not all(isinstance(item, str) for item in ingredients):
-            raise TypeError("ingredients must be a list of strings containing \
-                            the ingredient names")
-        if description and not isinstance(description, str):
-            raise TypeError("description is optional but it must be a string")
-        self._name = name
-        self._cooking_lvl = cooking_lvl
-        self._cooking_time = cooking_time
-        self._recipe_type = recipe_type
-        self._ingredients = ingredients
-        self._description = description
+        self.name = name
+        self.cooking_lvl = cooking_lvl
+        self.cooking_time = cooking_time
+        self.recipe_type = recipe_type
+        self.ingredients = ingredients
+        self.description = description
 
     def __str__(self):
         text = f'''- Recipe: {self.name}
@@ -110,9 +87,3 @@ class Recipe:
         if description and not isinstance(description, str):
             raise TypeError("description is optional but it must be a string")
         self._description = description
-
-
-# tourte = Recipe('tarta', 1, 909040, 'entrante', ['harina', 'huevos', 'leche'], '')
-# to_print = str(tourte)
-# print(to_print+'\n\n')
-# # print(tourte)
