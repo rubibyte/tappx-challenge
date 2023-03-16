@@ -16,7 +16,7 @@ class Recipe:
             raise TypeError("recipe type must be a string")
         elif recipe_type not in ["entrante", "comida", "postre"]:
             raise ValueError("recipe type must be one of those: \
-                             'entrante', 'comida' o 'postre'")
+                             'entrante', 'comida' or 'postre'")
         if not isinstance(ingredients, list):
             raise TypeError("ingredients must be a list")
         elif len(ingredients) < 1 or not all(isinstance(item, str) for item in ingredients):
@@ -85,7 +85,7 @@ class Recipe:
             raise TypeError("recipe type must be a string")
         elif recipe_type not in ["entrante", "comida", "postre"]:
             raise ValueError("recipe type must be one of those: \
-                             'entrante', 'comida' o 'postre'")
+                             'entrante', 'comida' or 'postre'")
         self._recipe_type = recipe_type
 
     @property
