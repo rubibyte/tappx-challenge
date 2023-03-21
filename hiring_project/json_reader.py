@@ -67,8 +67,10 @@ def article_title(id):
 # def keybert_keywords(text):
 # 	return kw_model.extract_keywords(text)
 
-print(video_text(video_ids[0]), end='\n\n')
-print(video_keywords(video_ids[0]), end='\n\n')
+# print(video_text(video_ids[0]), end='\n\n')
+print(article_keywords(article_ids[0]), end='\n\n')
+print(video_keywords(video_ids[1]), end='\n\n')
+print(video_keywords("pre-b42video32"))
 # print(keybert_keywords(video_text(video_ids[0])))
 
 f_videos.close()
