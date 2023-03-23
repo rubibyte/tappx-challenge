@@ -68,10 +68,22 @@ def article_title(id):
 # 	return kw_model.extract_keywords(text)
 
 # print(video_text(video_ids[0]), end='\n\n')
-print(' '.join(article_keywords(article_ids[0])), end='\n\n')
-print(' '.join(video_keywords(video_ids[5])), end='\n\n')
-print(' '.join(video_keywords(video_ids[8])), end='\n\n')
-print(' '.join(video_keywords(video_ids[25])), end='\n\n')
+# print(len(article_ids))
+# print(article_keywords(article_ids[5]), end='\n\n')
+# print(len(video_text(video_ids[5])), end='\n\n')
+# print(video_text(video_ids[8])[:4999] + video_text(video_ids[8])[4999:], end='\n\n')
+# print(len(video_text(video_ids[25])), end='\n\n')
+
+# print(len(article_text(article_ids[0])))
+# print(article_text(article_ids[0])[:500] + article_text(article_ids[0])[500:])
+
+
+for i in range(0, len(video_ids)):
+	print(len(video_text(video_ids[i])))
+
+
+
+# articulo de nombres de bebes, 12, 34 i 35
 
 
 # print(' '.join(video_keywords("pre-b42video32")))
