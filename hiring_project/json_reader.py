@@ -86,6 +86,9 @@ for i in range(0, len(video_ids)):
 # articulo de nombres de bebes, 12, 34 i 35
 
 
+# ultim article amb 30, 5, 29, 31
+
+
 # print(' '.join(video_keywords("pre-b42video32")))
 # print(keybert_keywords(video_text(video_ids[0])))
 
